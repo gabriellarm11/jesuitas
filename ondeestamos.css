@@ -1,0 +1,111 @@
+/* Reset e base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+}
+ 
+/* Header */
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #eaeaea;
+    padding: 20px 40px;
+}
+ 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ 
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+ 
+.logo img {
+    width: 60px;
+    height: auto;
+}
+ 
+.logo h1 {
+    font-size: 24px;
+    color: #333;
+}
+ 
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+ 
+nav a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+ 
+nav a.active, nav a:hover {
+    background-color: #39aee1;
+    color: #fff;
+}
+ 
+/* Introdução */
+.intro {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 40px;
+}
+ 
+.intro-text {
+    flex: 1;
+}
+ 
+.intro-text h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+ 
+.intro-text h2 .blue {
+    color: #39aee1;
+}
+ 
+.intro-text p {
+    font-size: 18px;
+    color: #555;
+}
+ 
+.intro-img img {
+    max-width: 500px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+ 
+/* Footer */
+footer {
+    background-color: #fff;
+    border-top: 1px solid #eaeaea;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+}
