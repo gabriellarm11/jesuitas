@@ -8,14 +8,14 @@
 body {
     font-family: 'Roboto', Arial, sans-serif;
     color: #333;
-    background-color: #f9f9f9;
+    background-color: white;
     line-height: 1.8;
     font-size: 20px; /* aumentei a base */
 }
  
 /* Header */
 header {
-    background-color: #fff;
+    background-color: #87CEEB;
     border-bottom: 1px solid #eaeaea;
     padding: 30px 60px; /* mais espaçamento */
 }
@@ -88,27 +88,60 @@ nav ul {
  
  
 nav a.active, nav a:hover {
-    background-color: #39aee1;
+    background-color: #228B22;
     color: #fff;
 }
  
  
  
- 
- 
+
+
+.intro-text {
+    flex: 1;
+    max-width: 600px; 
+}
+
+.intro-text h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.intro-text p, .intro-text ul {
+    font-size: 20px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.intro-text ul {
+    padding-left: 20px; 
+    list-style-type: disc;
+}
+
+
+
 /* Introdução */
 .intro {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
+    align-items: flex-start; /* Alinha topo dos itens */
     gap: 60px;
     max-width: 1400px;
     margin: 80px auto;
-    padding:  60px;
+    padding: 60px;
+    /* flex-wrap: wrap; Remova se quiser que a imagem e texto fiquem sempre lado a lado */
 }
 .intro-img {
-    margin-top: 110px; /* aqui você controla o quanto desce a imagem */
+    flex-shrink: 0; /* Impede que a imagem encolha */
+    max-width: 700px; /* Limita o tamanho da imagem */
+    margin-top: 0; /* Remove margem superior para alinhar com o texto */
+}
+
+.intro-img img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    display: block;
 }
  
 .intro-text {
@@ -136,13 +169,56 @@ nav a.active, nav a:hover {
     box-shadow: 0 8px 20px rgba(0,0,0,0.1);
  
 }
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    margin: 40px 0;
+    color: black;
+    font-weight: bold;
+    
+  }
+
+  .image-text {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    gap: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+   
+  .image-text img {
+    max-width: 400px;
+    width: 100%;
+    border-radius: 10px;
+  }
+   
+  .image-text .text {
+    flex: 1;
+  }
+   
+  .image-text.reverse {
+    flex-direction: row-reverse;
+}
+   
+  a {
+    color: #0077cc;
+    text-decoration: none;
+  }
+   
+  a:hover {
+    text-decoration: underline;
+  }
  
 /* Footer */
 footer {
-    background-color: #fff;
+    background-color: #A9A9A9;
     border-top: 1px solid #eaeaea;
     padding: 30px 0;
     text-align: center;
     font-size: 18px;
-    color: #777;
+    color: black;
 }
